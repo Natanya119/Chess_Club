@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>NCU Chess Club</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <header style="background-color: blue;position: fluid; ">
+
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; color:gold; font-size: 60px; "> The Computer Information Science </h1>
+        <h1 style="font-family: cursive;text-align: center; color: gold; font-size: 60px; "> Chess club</h1>
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+            <a class="navbar-brand " href="# ">
+                <img src="Img/Capture1.JPG " alt="Logo " style="width:50px; ">
+            </a>
+            <ul class="navbar-nav ">
+                <li class="nav-item active ">
+                    <a class="nav-link " href="Club.html "> HOME</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="AboutUs.html ">ABOUT US</a>
+
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="Events.html">EVENTS</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="Club Members.html ">CLUB MEMBERS</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="ContactUs.html ">CONTACT US</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="FAQ.html ">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</head>
+
+<body>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid" style="background-color: gold;">
+        <div class="container">
+            <h1 class="display-4" style="font-family:cursive;text-align: center; color:blue;">Club Events</h1>
+
+            <img src="Img/event.JPG" alt="Logo " style="width: 150px; ">
+            <img src="Img/event1.JPG" alt="Logo " style="width: 150px; ">
+            <img src="Img/event2.jpg" alt="Logo " style="width: 150px; ">
+            <img src="Img/event3.JPG" alt="Logo " style="width: 150px; ">
+            <img src="Img/event4.JPG" alt="Logo " style="width: 150px; ">
+            <img src="Img/event5.JPG" alt="Logo " style="width: 150px; ">
+            <img src="Img/event6.JPG" alt="Logo " style="width: 150px; ">
+            <p class="lead"></p>
+            <a class="btn btn-primary btn-lg" href="Events.html" role="button">Learn more</a>
+        </div>
+    </div>
+    <!-- Cards -->
+    <div class="card-group">
+        <div class="card">
+            <img src="Img/cliff.JPG" class="card-img-top" style="height: 337px" alt="...">
+            <style>
+                #more {
+                    display: none;
+                }
+            </style>
+            <div class="card-body">
+                <h5 class="card-title">Cliffon A. Pryce</h5>
+                <p><i style="font-family: 'Times New Roman', Times, serif;">“Though the pawns of chess may appear indispensable, without pawns then chess would be a rainbow with only two shades, black and white.”  </i> Cliffon A. Pryce</p>
+                <p class="card-text">Cliffon Pryce is the founder of The NCU Chess club he is an extraordinary individual who saw the importance and value of<span id="dots">...</span><span id="more"> chess at a very young age. He started playing in high school from
+                    a fellow school mate then quickly dominated his peers and became the coach for his high school. He then went on to becoming an official coach where he taught in numerous high schools, primary schools, and private lessons. He is a selfless
+                    person who has generously given his time in an effort to share how valuable chess is to everyday life.</span>
+                </p>
+                <!-- Read more button -->
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+
+                <script>
+                    function myFunction() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="Img/img5.jpeg" class="card-img-top" style="height: 337px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Competitions</h5>
+                <p class="card-text">The chess club usually hosts in-house tornaments as well as play againt other departments on the campus as well as attend external tornaments.</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="Img/chess.JPG" class="card-img-top" style="height: 337px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">History of the club</h5>
+                <p class="card-text">The Computer Information Chess Club was founded by Cliffon A. Pryce in September 2019. This club is apart of The CHIPS Club and is only available to the members of the CIS department. The club has been growing tremendously since it has
+                    started and we are delighted and determine to produce the best experience possible to all our members. </p>
+                <a class="btn btn-primary btn-sml" href="AboutUs.html" role="button">Read more about us</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
